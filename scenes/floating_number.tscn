@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://dlysedy102c0k"]
+
+[ext_resource type="FontFile" uid="uid://cdcgbrprulmjb" path="res://assets/fonts/press start 2p.ttf" id="1_2ym5y"]
+[ext_resource type="Script" uid="uid://0ugr78tkq1sk" path="res://scripts/floating_number.gd" id="2_peml6"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_tcgqs"]
+font = ExtResource("1_2ym5y")
+font_size = 17
+shadow_size = 3
+
+[node name="FloatingNumber" type="Label" unique_id=465265877]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "-40"
+label_settings = SubResource("LabelSettings_tcgqs")
+script = ExtResource("2_peml6")

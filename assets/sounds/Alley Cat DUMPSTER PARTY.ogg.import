@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://br4r78piw2bhs"
+path="res://.godot/imported/Alley Cat DUMPSTER PARTY.ogg-540f758a3f4d66c1e4ff3644535a08b3.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/sounds/Alley Cat DUMPSTER PARTY.ogg"
+dest_files=["res://.godot/imported/Alley Cat DUMPSTER PARTY.ogg-540f758a3f4d66c1e4ff3644535a08b3.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

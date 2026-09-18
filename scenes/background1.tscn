@@ -1,0 +1,105 @@
+[gd_scene format=3 uid="uid://bqjrqi8rvptt7"]
+
+[ext_resource type="Texture2D" uid="uid://c51sjveqo4kfs" path="res://assets/images/parallax/upper cloud.png" id="1_ida25"]
+[ext_resource type="Texture2D" uid="uid://cp2aoll1oamdq" path="res://assets/images/parallax/middle cloud.png" id="2_1rdqb"]
+[ext_resource type="Texture2D" uid="uid://b32qwykf0pa78" path="res://assets/images/parallax/small cloud.png" id="3_2vsms"]
+[ext_resource type="Texture2D" uid="uid://cunowym36lvu8" path="res://assets/images/parallax/down cloud.png" id="4_mwy4q"]
+[ext_resource type="Texture2D" uid="uid://besg6bylaanqg" path="res://assets/images/parallax/parallax far mountain.png" id="5_2vsms"]
+[ext_resource type="Texture2D" uid="uid://ckidq0shu8li2" path="res://assets/images/parallax/parallax close mountain.png" id="6_mwy4q"]
+
+[node name="background1" type="Node2D" unique_id=1964276892]
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=379379794]
+offset_left = -4579.0
+offset_top = -2199.0
+offset_right = 6731.0
+offset_bottom = 1155.0
+color = Color(0.97571045, 0.82651186, 0.82267946, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="." unique_id=34825032]
+offset_left = -4610.0
+offset_top = 738.0
+offset_right = 6716.0
+offset_bottom = 3631.0
+color = Color(0.43137255, 0.21960784, 0.20392157, 1)
+
+[node name="Parallax2D2" type="Parallax2D" parent="." unique_id=864708632]
+scroll_scale = Vector2(0.2, 0)
+repeat_size = Vector2(1270, 0)
+autoscroll = Vector2(50, 0)
+repeat_times = 10
+follow_viewport = false
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D2" unique_id=1114585930]
+position = Vector2(848, -84.000015)
+scale = Vector2(2.2118058, 1.8981482)
+texture = ExtResource("2_1rdqb")
+
+[node name="Parallax2D8" type="Parallax2D" parent="." unique_id=842889114]
+scroll_scale = Vector2(0.2, 0)
+repeat_size = Vector2(1270, 0)
+autoscroll = Vector2(50, 0)
+repeat_times = 10
+follow_viewport = false
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D8" unique_id=623151846]
+position = Vector2(851.00006, -1016.0001)
+scale = Vector2(2.2118058, 1.8981482)
+texture = ExtResource("2_1rdqb")
+
+[node name="Parallax2D4" type="Parallax2D" parent="." unique_id=576958491]
+scroll_scale = Vector2(0.2, 0)
+repeat_size = Vector2(1270, 0)
+autoscroll = Vector2(50, 0)
+repeat_times = 10
+follow_viewport = false
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D4" unique_id=2111990352]
+position = Vector2(764, -645.00006)
+scale = Vector2(2.2118058, 1.8981482)
+texture = ExtResource("3_2vsms")
+
+[node name="Parallax2D3" type="Parallax2D" parent="." unique_id=1740122559]
+scroll_scale = Vector2(0.2, 0)
+repeat_size = Vector2(1270, 0)
+autoscroll = Vector2(50, 0)
+repeat_times = 10
+follow_viewport = false
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D3" unique_id=1574388665]
+position = Vector2(1009, -225)
+texture = ExtResource("1_ida25")
+
+[node name="Parallax2D" type="Parallax2D" parent="." unique_id=1883700253]
+scroll_scale = Vector2(0.2, 0)
+repeat_size = Vector2(1270, 0)
+autoscroll = Vector2(50, 0)
+repeat_times = 10
+follow_viewport = false
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D" unique_id=663171093]
+position = Vector2(704.00006, 54)
+scale = Vector2(2.2065973, 2.4228394)
+texture = ExtResource("4_mwy4q")
+
+[node name="Parallax2D5" type="Parallax2D" parent="." unique_id=1461785054]
+scroll_scale = Vector2(0.5, 0)
+repeat_size = Vector2(1450, 0)
+repeat_times = 10
+follow_viewport = false
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D5" unique_id=1727104200]
+position = Vector2(629.00006, 195.99998)
+scale = Vector2(0.93530315, 0.9438593)
+texture = ExtResource("5_2vsms")
+
+[node name="Parallax2D6" type="Parallax2D" parent="." unique_id=291760370]
+scroll_scale = Vector2(0.5, 0)
+repeat_size = Vector2(1450, 0)
+repeat_times = 10
+follow_viewport = false
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D6" unique_id=1748492486]
+position = Vector2(625.00006, 331)
+scale = Vector2(0.93530315, 0.9438593)
+texture = ExtResource("6_mwy4q")

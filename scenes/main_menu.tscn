@@ -1,0 +1,556 @@
+[gd_scene format=4 uid="uid://loj3lt2uaoh3"]
+
+[ext_resource type="Script" uid="uid://djdquynglh1tw" path="res://scripts/main_menu.gd" id="1_ekxnf"]
+[ext_resource type="Texture2D" uid="uid://dmnld6l8ea3ng" path="res://assets/images/player/cat win cheer 1.png" id="3_bqqt6"]
+[ext_resource type="PackedScene" uid="uid://bqjrqi8rvptt7" path="res://scenes/background1.tscn" id="3_wu84c"]
+[ext_resource type="Texture2D" uid="uid://br4m3w1j8e8u1" path="res://assets/images/tilemaps/cake tileset.png" id="4_8ln24"]
+[ext_resource type="FontFile" uid="uid://b2nfiv1mfscm3" path="res://assets/fonts/lastpriestess.ttf" id="5_rtw2f"]
+[ext_resource type="AudioStream" uid="uid://cy82tapltb40y" path="res://assets/sounds/Alley Cat DUMPSTER DIVIN.ogg" id="6_rtw2f"]
+[ext_resource type="Script" uid="uid://bgsore3k33fb8" path="res://scripts/audio_control.gd" id="7_oa1go"]
+[ext_resource type="Script" uid="uid://c481eb40vscoh" path="res://scripts/full_screen_control.gd" id="8_tbmy8"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8ln24"]
+bg_color = Color(0.90871656, 0.7019629, 0.7787355, 1)
+shadow_color = Color(0.25275356, 0.25275356, 0.25275356, 0.6)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tcgqs"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rtw2f"]
+bg_color = Color(0.9098039, 0.7019608, 0.78039217, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_oa1go"]
+bg_color = Color(0.9098039, 0.7019608, 0.78039217, 1)
+
+[sub_resource type="Environment" id="Environment_wu84c"]
+background_mode = 3
+tonemap_mode = 1
+glow_enabled = true
+glow_intensity = 1.19
+glow_bloom = 0.1
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tbmy8"]
+texture = ExtResource("4_8ln24")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+8:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+7:1/0 = 0
+9:1/0 = 0
+9:1/0/texture_origin = Vector2i(0, -3)
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+5:2/0 = 0
+6:2/0 = 0
+7:2/0 = 0
+9:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+6:3/0 = 0
+7:3/0 = 0
+8:3/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+6:4/0 = 0
+7:4/0 = 0
+7:4/0/texture_origin = Vector2i(0, -11)
+8:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+6:5/0 = 0
+8:5/0 = 0
+9:5/0 = 0
+0:6/0 = 0
+1:6/0 = 0
+2:6/0 = 0
+3:6/0 = 0
+3:6/0/texture_origin = Vector2i(0, -3)
+4:6/0 = 0
+4:6/0/texture_origin = Vector2i(0, -3)
+5:6/0 = 0
+6:6/0 = 0
+7:6/0 = 0
+8:6/0 = 0
+9:6/0 = 0
+0:7/0 = 0
+1:7/0 = 0
+2:7/0 = 0
+3:7/0 = 0
+3:7/0/texture_origin = Vector2i(0, -3)
+4:7/0 = 0
+4:7/0/texture_origin = Vector2i(0, -3)
+5:7/0 = 0
+6:7/0 = 0
+7:7/0 = 0
+8:7/0 = 0
+9:7/0 = 0
+0:8/0 = 0
+1:8/0 = 0
+3:8/0 = 0
+3:8/0/texture_origin = Vector2i(0, -3)
+4:8/0 = 0
+4:8/0/texture_origin = Vector2i(0, -3)
+5:8/0 = 0
+6:8/0 = 0
+7:8/0 = 0
+8:8/0 = 0
+9:8/0 = 0
+0:9/0 = 0
+1:9/0 = 0
+2:9/0 = 0
+6:9/0 = 0
+9:9/0 = 0
+0:10/0 = 0
+1:10/0 = 0
+2:10/0 = 0
+4:10/0 = 0
+5:10/0 = 0
+6:10/0 = 0
+7:10/0 = 0
+8:10/0 = 0
+9:10/0 = 0
+0:11/0 = 0
+0:11/0/texture_origin = Vector2i(0, -3)
+1:11/0 = 0
+1:11/0/texture_origin = Vector2i(0, -3)
+2:11/0 = 0
+2:11/0/texture_origin = Vector2i(0, -3)
+4:11/0 = 0
+5:11/0 = 0
+6:11/0 = 0
+7:11/0 = 0
+8:11/0 = 0
+9:11/0 = 0
+0:12/0 = 0
+0:12/0/texture_origin = Vector2i(0, -3)
+1:12/0 = 0
+1:12/0/texture_origin = Vector2i(0, -3)
+2:12/0 = 0
+2:12/0/texture_origin = Vector2i(0, -3)
+4:12/0 = 0
+5:12/0 = 0
+6:12/0 = 0
+7:12/0 = 0
+8:12/0 = 0
+9:12/0 = 0
+0:13/0 = 0
+0:13/0/texture_origin = Vector2i(0, -3)
+1:13/0 = 0
+1:13/0/texture_origin = Vector2i(0, -3)
+2:13/0 = 0
+2:13/0/texture_origin = Vector2i(0, -3)
+3:13/0 = 0
+4:13/0 = 0
+5:13/0 = 0
+0:14/0 = 0
+0:14/0/texture_origin = Vector2i(0, -1)
+1:14/0 = 0
+1:14/0/texture_origin = Vector2i(0, -1)
+2:14/0 = 0
+2:14/0/texture_origin = Vector2i(0, -1)
+3:14/0 = 0
+4:14/0 = 0
+5:14/0 = 0
+6:14/0 = 0
+6:14/0/texture_origin = Vector2i(0, -3)
+7:14/0 = 0
+7:14/0/texture_origin = Vector2i(0, -3)
+8:14/0 = 0
+8:14/0/texture_origin = Vector2i(0, -3)
+0:15/0 = 0
+0:15/0/texture_origin = Vector2i(0, -1)
+1:15/0 = 0
+1:15/0/texture_origin = Vector2i(0, -1)
+2:15/0 = 0
+2:15/0/texture_origin = Vector2i(0, -1)
+3:15/0 = 0
+4:15/0 = 0
+5:15/0 = 0
+6:15/0 = 0
+6:15/0/texture_origin = Vector2i(0, -3)
+7:15/0 = 0
+7:15/0/texture_origin = Vector2i(0, -3)
+8:15/0 = 0
+8:15/0/texture_origin = Vector2i(0, -3)
+0:16/0 = 0
+1:16/0 = 0
+2:16/0 = 0
+3:16/0 = 0
+4:16/0 = 0
+5:16/0 = 0
+6:16/0 = 0
+7:16/0 = 0
+8:16/0 = 0
+0:17/0 = 0
+1:17/0 = 0
+2:17/0 = 0
+3:17/0 = 0
+4:17/0 = 0
+5:17/0 = 0
+6:17/0 = 0
+7:17/0 = 0
+8:17/0 = 0
+0:18/0 = 0
+1:18/0 = 0
+2:18/0 = 0
+3:18/0 = 0
+4:18/0 = 0
+5:18/0 = 0
+6:18/0 = 0
+7:18/0 = 0
+8:18/0 = 0
+6:19/0 = 0
+7:19/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_tcgqs"]
+sources/0 = SubResource("TileSetAtlasSource_tbmy8")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wu84c"]
+atlas = ExtResource("3_bqqt6")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8ln24"]
+atlas = ExtResource("3_bqqt6")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rtw2f"]
+atlas = ExtResource("3_bqqt6")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_tcgqs"]
+animations = [{
+"frames": [{
+"duration": 1.5,
+"texture": SubResource("AtlasTexture_wu84c")
+}, {
+"duration": 1.5,
+"texture": SubResource("AtlasTexture_8ln24")
+}, {
+"duration": 1.5,
+"texture": SubResource("AtlasTexture_rtw2f")
+}],
+"loop": 2,
+"name": &"cheer",
+"speed": 8.0
+}]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8ln24"]
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_tcgqs"]
+color = Color(1, 1, 1, 1)
+thickness = 6
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_fogeg"]
+color = Color(0.92149615, 0.6749778, 0.82429457, 1)
+thickness = 6
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_tbmy8"]
+
+[node name="main_menu" type="Control" unique_id=2075489389]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+script = ExtResource("1_ekxnf")
+
+[node name="background1" parent="." unique_id=1964276892 instance=ExtResource("3_wu84c")]
+position = Vector2(11, -132)
+
+[node name="Label" type="Label" parent="." unique_id=31855068]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 65.0
+offset_top = -242.0
+offset_right = 558.0
+offset_bottom = -161.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.78222847, 0.33947387, 0.53863597, 1)
+theme_override_fonts/font = ExtResource("5_rtw2f")
+theme_override_font_sizes/font_size = 60
+text = "FURS & FORTUNES"
+vertical_alignment = 1
+
+[node name="MainButtons" type="VBoxContainer" parent="." unique_id=1589077869]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.6883681
+anchor_top = 0.43364197
+anchor_right = 0.8529448
+anchor_bottom = 0.779321
+offset_left = 3.0517578e-05
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 40
+metadata/_edit_use_anchors_ = true
+
+[node name="start" type="Button" parent="MainButtons" unique_id=1331734284]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(0.9505668, 0.6942824, 0.7901954, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.9490196, 0.69411767, 0.7882353, 1)
+theme_override_fonts/font = ExtResource("5_rtw2f")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_8ln24")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_tcgqs")
+theme_override_styles/hover = SubResource("StyleBoxFlat_tcgqs")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_tcgqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_tcgqs")
+text = "START"
+
+[node name="settings" type="Button" parent="MainButtons" unique_id=1248867036]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(0.9505668, 0.6942824, 0.7901954, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.9490196, 0.69411767, 0.7882353, 1)
+theme_override_fonts/font = ExtResource("5_rtw2f")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_rtw2f")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_tcgqs")
+theme_override_styles/hover = SubResource("StyleBoxFlat_tcgqs")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_tcgqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_tcgqs")
+text = "SETTINGS"
+
+[node name="controls" type="Button" parent="MainButtons" unique_id=1643959448]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(0.9505668, 0.6942824, 0.7901954, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.9490196, 0.69411767, 0.7882353, 1)
+theme_override_fonts/font = ExtResource("5_rtw2f")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_rtw2f")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_tcgqs")
+theme_override_styles/hover = SubResource("StyleBoxFlat_tcgqs")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_tcgqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_tcgqs")
+text = "CONTROLS"
+
+[node name="exit" type="Button" parent="MainButtons" unique_id=1383556906]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(0.9505668, 0.6942824, 0.7901954, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.9490196, 0.69411767, 0.7882353, 1)
+theme_override_fonts/font = ExtResource("5_rtw2f")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_oa1go")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_tcgqs")
+theme_override_styles/hover = SubResource("StyleBoxFlat_tcgqs")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_tcgqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_tcgqs")
+text = "EXIT"
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=465234066]
+environment = SubResource("Environment_wu84c")
+
+[node name="Node2D" type="Node2D" parent="." unique_id=786768592]
+
+[node name="foreground" type="TileMapLayer" parent="Node2D" unique_id=421300731]
+position = Vector2(-1, 54)
+scale = Vector2(3, 3)
+tile_map_data = PackedByteArray("AAAAAAkAAAAGAAAAAAABAAkAAAAGAAAAAAACAAkAAAAGAAAAAAADAAkAAAAGAAAAAAAEAAkAAAAGAAAAAAAFAAkAAAAGAAAAAAAGAAkAAAAGAAAAAAAHAAkAAAAGAAAAAAAIAAkAAAAGAAEAAAAJAAkAAAAGAAEAAAAKAAgAAAAGAAAAAAALAAgAAAAGAAAAAAAMAAgAAAAGAAAAAAANAAgAAAAGAAAAAAAAAAoAAAAGAAEAAAABAAoAAAAGAAEAAAACAAoAAAAGAAEAAAADAAoAAAAGAAEAAAAEAAoAAAAGAAEAAAAFAAoAAAAGAAEAAAAGAAoAAAAGAAEAAAAHAAoAAAAGAAEAAAAIAAoAAAAGAAEAAAAJAAoAAAAGAAEAAAAKAAkAAAAGAAEAAAALAAkAAAAGAAEAAAAMAAkAAAAGAAEAAAANAAkAAAAGAAEAAAANAAoAAAAGAAEAAAAMAAoAAAAGAAEAAAALAAoAAAAGAAEAAAAKAAoAAAAGAAEAAAAAAAsAAAAGAAAAAAABAAsAAAAGAAAAAAACAAsAAAAGAAAAAAADAAsAAAAGAAAAAAAEAAsAAAAGAAAAAAAFAAsAAAAGAAAAAAAGAAsAAAAGAAAAAAAHAAsAAAAGAAAAAAAIAAsAAAAGAAAAAAAJAAsAAAAGAAAAAAAKAAsAAAAGAAAAAAALAAsAAAAGAAAAAAAMAAsAAAAGAAAAAAANAAsAAAAGAAAAAAABAAwAAAAGAAEAAAAAAAwAAAAGAAEAAAACAAwAAAAGAAEAAAADAAwAAAAGAAEAAAAEAAwAAAAGAAEAAAAFAAwAAAAGAAEAAAAGAAwAAAAGAAEAAAAHAAwAAAAGAAEAAAAIAAwAAAAGAAEAAAAJAAwAAAAGAAEAAAAKAAwAAAAGAAEAAAALAAwAAAAGAAEAAAAMAAwAAAAGAAEAAAANAAwAAAAGAAEAAAAAAA0AAAAGAAEAAAABAA0AAAAGAAEAAAACAA0AAAAGAAEAAAADAA0AAAAGAAEAAAAEAA0AAAAGAAEAAAAFAA0AAAAGAAEAAAAGAA0AAAAGAAEAAAAHAA0AAAAGAAEAAAAIAA0AAAAGAAEAAAAJAA0AAAAGAAEAAAAKAA0AAAAGAAEAAAALAA0AAAAGAAEAAAAMAA0AAAAGAAEAAAANAA0AAAAGAAEAAAANAA4AAAAGAAEAAAAMAA4AAAAGAAEAAAALAA4AAAAGAAEAAAAKAA4AAAAGAAEAAAAJAA4AAAAGAAEAAAAIAA4AAAAGAAEAAAAHAA4AAAAGAAEAAAAGAA4AAAAGAAEAAAAFAA4AAAAGAAEAAAAEAA4AAAAGAAEAAAADAA4AAAAGAAEAAAACAA4AAAAGAAEAAAABAA4AAAAGAAEAAAAAAA4AAAAGAAEAAAABAAYAAAADAAYAAAABAAcAAAADAAcAAAABAAgAAAADAAgAAAACAAYAAAAEAAYAAAACAAcAAAAEAAcAAAACAAgAAAAEAAgAAAAJAAgAAAAGAAAAAAAIAAgAAAAGAAAAAAAOAAoAAAAAAAYAAAAOAAsAAAAAAAcAAAAPAAoAAAABAAYAAAAPAAsAAAABAAcAAAAQAAoAAAACAAYAAAAQAAsAAAACAAcAAAARAAoAAAAAAAYAAAARAAsAAAAAAAcAAAASAAoAAAABAAYAAAASAAsAAAABAAcAAAATAAoAAAACAAYAAAATAAsAAAACAAcAAAAUAAoAAAAAAAYAAAAUAAsAAAAAAAcAAAAVAAoAAAABAAYAAAAVAAsAAAABAAcAAAAWAAoAAAACAAYAAAAWAAsAAAACAAcAAAAXAAoAAAAAAAYAAAAXAAsAAAAAAAcAAAAYAAoAAAABAAYAAAAYAAsAAAABAAcAAAAZAAoAAAACAAYAAAAZAAsAAAACAAcAAAAaAAoAAAAAAAYAAAAaAAsAAAAAAAcAAAAbAAoAAAABAAYAAAAbAAsAAAABAAcAAAAcAAoAAAACAAYAAAAcAAsAAAACAAcAAAAOAAwAAAAAAAcAAAAPAAwAAAABAAcAAAAQAAwAAAACAAcAAAARAAwAAAAAAAcAAAASAAwAAAABAAcAAAATAAwAAAACAAcAAAAUAAwAAAAAAAcAAAAVAAwAAAABAAcAAAAWAAwAAAACAAcAAAAXAAwAAAAAAAcAAAAYAAwAAAABAAcAAAAZAAwAAAACAAcAAAAaAAwAAAAAAAcAAAAbAAwAAAABAAcAAAAcAAwAAAACAAcAAAAaAA0AAAAAAAcAAAAbAA0AAAABAAcAAAAcAA0AAAACAAcAAAAXAA0AAAAAAAcAAAAYAA0AAAABAAcAAAAZAA0AAAACAAcAAAAUAA0AAAAAAAcAAAAVAA0AAAABAAcAAAAWAA0AAAACAAcAAAARAA0AAAAAAAcAAAASAA0AAAABAAcAAAATAA0AAAACAAcAAAAOAA0AAAAAAAcAAAAPAA0AAAABAAcAAAAQAA0AAAACAAcAAAAOAA4AAAAAAAcAAAAPAA4AAAABAAcAAAAQAA4AAAACAAcAAAARAA4AAAAAAAcAAAASAA4AAAABAAcAAAATAA4AAAACAAcAAAAUAA4AAAAAAAcAAAAVAA4AAAABAAcAAAAWAA4AAAACAAcAAAAXAA4AAAAAAAcAAAAYAA4AAAABAAcAAAAZAA4AAAACAAcAAAAaAA4AAAAAAAcAAAAbAA4AAAABAAcAAAAcAA4AAAACAAcAAAAEAAcAAAAGAA4AAAAEAAgAAAAGAA8AAAAFAAcAAAAHAA4AAAAFAAgAAAAHAA8AAAAGAAcAAAAIAA4AAAAGAAgAAAAIAA8AAAABAAIAAAACAAIAAAABAAMAAAACAAMAAAACAAIAAAADAAIAAAACAAMAAAADAAMAAAAEAAAAAAAAAAQAAAAEAAEAAAAAAAUAAAAFAAAAAAABAAQAAAAFAAEAAAABAAUAAAANAAcAAAAJAAEAAAAHAAMAAAAJAAIAAAAIAAMAAAAJAAIAAAAJAAMAAAAJAAIAAAAHAAEAAAAAAA4AAAAHAAIAAAAAAA8AAAAIAAEAAAABAA4AAAAIAAIAAAABAA8AAAAJAAEAAAACAA4AAAAJAAIAAAACAA8AAAA=")
+tile_set = SubResource("TileSet_tcgqs")
+
+[node name="line" type="TileMapLayer" parent="Node2D" unique_id=1362877213]
+scale = Vector2(3, 3)
+tile_set = SubResource("TileSet_tcgqs")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Node2D" unique_id=1060603707]
+texture_filter = 1
+position = Vector2(518, 400)
+scale = Vector2(3, 3)
+sprite_frames = SubResource("SpriteFrames_tcgqs")
+animation = &"cheer"
+autoplay = "cheer"
+frame_progress = 0.494361
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1259167380]
+stream = ExtResource("6_rtw2f")
+autoplay = true
+bus = &"Music"
+
+[node name="options" type="Panel" parent="." unique_id=1932358905]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -195.0
+offset_top = -94.0
+offset_right = 195.0
+offset_bottom = 77.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="title" type="Label" parent="options" unique_id=146302157]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -58.0
+offset_top = 12.5
+offset_right = 47.0
+offset_bottom = 40.5
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("5_rtw2f")
+theme_override_font_sizes/font_size = 29
+text = "OPTIONS"
+
+[node name="back" type="Button" parent="options" unique_id=750211249]
+layout_mode = 0
+offset_left = 153.0
+offset_top = 134.5
+offset_right = 222.0
+offset_bottom = 160.5
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(0.9505668, 0.6942824, 0.7901954, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.9490196, 0.69411767, 0.7882353, 1)
+theme_override_fonts/font = ExtResource("5_rtw2f")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxEmpty_8ln24")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_tcgqs")
+theme_override_styles/hover = SubResource("StyleBoxFlat_tcgqs")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_tcgqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_tcgqs")
+text = "BACK"
+
+[node name="AudioControl" type="HSlider" parent="options" unique_id=1270547444]
+layout_mode = 0
+offset_left = 133.0
+offset_top = 60.5
+offset_right = 352.0
+offset_bottom = 76.5
+theme_override_styles/slider = SubResource("StyleBoxLine_tcgqs")
+theme_override_styles/grabber_area = SubResource("StyleBoxLine_fogeg")
+max_value = 1.0
+step = 0.05
+value = 1.0
+script = ExtResource("7_oa1go")
+audio_bus_name = "Music"
+
+[node name="FullScreenControl" type="CheckBox" parent="options" unique_id=1080258004]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 88.5
+offset_right = 323.0
+offset_bottom = 117.0
+theme_override_fonts/font = ExtResource("5_rtw2f")
+text = "FULL SCREEN"
+script = ExtResource("8_tbmy8")
+
+[node name="volume" type="Label" parent="options" unique_id=138057223]
+layout_mode = 0
+offset_left = 62.0
+offset_top = 61.5
+offset_right = 119.0
+offset_bottom = 84.5
+theme_override_fonts/font = ExtResource("5_rtw2f")
+theme_override_font_sizes/font_size = 16
+text = "VOLUME"
+
+[node name="controls" type="Panel" parent="." unique_id=2030525198]
+layout_mode = 0
+offset_left = 335.0
+offset_top = 204.0
+offset_right = 828.0
+offset_bottom = 461.0
+
+[node name="title" type="Label" parent="controls" unique_id=782098132]
+layout_mode = 0
+offset_left = 155.0
+offset_top = 28.0
+offset_right = 337.0
+offset_bottom = 54.0
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("5_rtw2f")
+theme_override_font_sizes/font_size = 30
+text = "HOW TO PLAY"
+
+[node name="GridContainer" type="GridContainer" parent="controls" unique_id=790486431]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 82.0
+offset_right = 485.0
+offset_bottom = 170.0
+theme_override_constants/v_separation = 17
+
+[node name="MoveLeft" type="Label" parent="controls/GridContainer" unique_id=1142682677]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("5_rtw2f")
+theme_override_font_sizes/font_size = 20
+text = "Move Left :                                                     A Key"
+
+[node name="MoveRight" type="Label" parent="controls/GridContainer" unique_id=228696088]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("5_rtw2f")
+theme_override_font_sizes/font_size = 20
+text = "Move Right :                                                   D Key"
+
+[node name="Jump" type="Label" parent="controls/GridContainer" unique_id=910824958]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("5_rtw2f")
+theme_override_font_sizes/font_size = 20
+text = "Jump :                                                           Spacebar"
+
+[node name="back" type="Button" parent="controls" unique_id=88314242]
+layout_mode = 0
+offset_left = 209.0
+offset_top = 213.0
+offset_right = 278.0
+offset_bottom = 239.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(0.9505668, 0.6942824, 0.7901954, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.9490196, 0.69411767, 0.7882353, 1)
+theme_override_fonts/font = ExtResource("5_rtw2f")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxEmpty_tbmy8")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_tcgqs")
+theme_override_styles/hover = SubResource("StyleBoxFlat_tcgqs")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_tcgqs")
+theme_override_styles/focus = SubResource("StyleBoxFlat_tcgqs")
+text = "BACK"
+
+[connection signal="pressed" from="MainButtons/start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="MainButtons/settings" to="." method="_on_settings_pressed"]
+[connection signal="pressed" from="MainButtons/controls" to="." method="_on_controls_pressed"]
+[connection signal="pressed" from="MainButtons/exit" to="." method="_on_exit_pressed"]
+[connection signal="pressed" from="options/back" to="." method="_on_back_options_pressed"]
+[connection signal="value_changed" from="options/AudioControl" to="options/AudioControl" method="_on_value_changed"]
+[connection signal="toggled" from="options/FullScreenControl" to="options/FullScreenControl" method="_on_toggled"]
+[connection signal="pressed" from="controls/back" to="." method="_on_back_controls_pressed"]

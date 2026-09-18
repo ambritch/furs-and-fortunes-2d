@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cy82tapltb40y"
+path="res://.godot/imported/Alley Cat DUMPSTER DIVIN.ogg-3ad05b16cd1398bc34c3268cfbe0a21b.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/sounds/Alley Cat DUMPSTER DIVIN.ogg"
+dest_files=["res://.godot/imported/Alley Cat DUMPSTER DIVIN.ogg-3ad05b16cd1398bc34c3268cfbe0a21b.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
