@@ -490,10 +490,10 @@ offset_bottom = 461.0
 
 [node name="title" type="Label" parent="controls" unique_id=782098132]
 layout_mode = 0
-offset_left = 155.0
-offset_top = 28.0
-offset_right = 337.0
-offset_bottom = 54.0
+offset_left = 154.0
+offset_top = 21.0
+offset_right = 336.0
+offset_bottom = 47.0
 size_flags_horizontal = 4
 theme_override_fonts/font = ExtResource("5_rtw2f")
 theme_override_font_sizes/font_size = 30
@@ -512,20 +512,26 @@ layout_mode = 2
 size_flags_horizontal = 3
 theme_override_fonts/font = ExtResource("5_rtw2f")
 theme_override_font_sizes/font_size = 20
-text = "Move Left :                                                     A Key"
+text = "Move Left :                                             A Key"
 
 [node name="MoveRight" type="Label" parent="controls/GridContainer" unique_id=228696088]
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_fonts/font = ExtResource("5_rtw2f")
 theme_override_font_sizes/font_size = 20
-text = "Move Right :                                                   D Key"
+text = "Move Right :                                           D Key"
 
 [node name="Jump" type="Label" parent="controls/GridContainer" unique_id=910824958]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("5_rtw2f")
 theme_override_font_sizes/font_size = 20
-text = "Jump :                                                           Spacebar"
+text = "Jump :                                                   Spacebar"
+
+[node name="Attack" type="Label" parent="controls/GridContainer" unique_id=186363955]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("5_rtw2f")
+theme_override_font_sizes/font_size = 20
+text = "Attack :                                          Left Mouse Button"
 
 [node name="back" type="Button" parent="controls" unique_id=88314242]
 layout_mode = 0
